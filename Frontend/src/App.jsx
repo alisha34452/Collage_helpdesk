@@ -17,7 +17,7 @@ import { useEffect } from "react";
 
 const App = () => {
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/track/", {
+    fetch(`${import.meta.env.VITE_BACKEND}/api/v1/track`, {
       method: "GET",
     }).catch((err) => {
       console.error("Failed to update visitor count:", err);
