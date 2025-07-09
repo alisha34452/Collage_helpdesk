@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import "../../App.css";
-import { Button } from "./ui/moving-border";
 import { motion } from "framer-motion";
 import { Link, redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
