@@ -11,10 +11,18 @@ import Department from "./assets/components/department.jsx";
 import Resources from "./assets/components/resources.jsx";
 import ScrollToTopButton from "./assets/components/scroll.jsx";
 import NewApplicants from "./assets/components/NewApplicants.jsx";
+import { useEffect } from "react";
 
 
 
 const App = () => {
+  useEffect(() => {
+    fetch("http://localhost:8000/api/v1/track/", {
+      method: "GET",
+    }).catch((err) => {
+      console.error("Failed to update visitor count:", err);
+    });
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",

@@ -24,19 +24,10 @@ const ScrollToTopButton = () => {
   return (
     isVisible && (
       <button
+      className="fixed bottom-[60px] right-[20px]   text-[1.4rem] bg-[#21897E] text-white rounded-full cursor-pointer z-[999] "
         onClick={scrollToTop}
         style={{
-          position: "fixed",
-          bottom: "60px",
-          right: "20px",
-          padding: "0.5rem 1rem",
-          fontSize: "1.4rem",
-          backgroundColor: "#21897E",
-          color: "white",
-          border: "none",
-          borderRadius: "50%",
-          cursor: "pointer",
-          zIndex: "999",
+          padding: "4px 18px"
         }}
       >
         ↑
