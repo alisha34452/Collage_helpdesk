@@ -2,8 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .documents-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
