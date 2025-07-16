@@ -15,8 +15,6 @@ const Landing = () => {
           <p>Inspiring students to lead with knowledge and innovation.</p>
         </div>
       </section>
-
-     
       <motion.div
       initial={{  scale: 0.9 }}
         animate={{ scale: 1 }}
@@ -28,7 +26,7 @@ const Landing = () => {
         }}
         onClick={() => navigate("/NewApplicants")}
         
-         class="bg-yellow-600 cursor-pointer w-[80vw] mx-auto py-4 text-center rounded-md mt-6 " style={{margin: "auto",marginTop: "54px", padding: "20px 0"}}>🏫 Guidelines for New Applicants </motion.div>
+         class="bg-yellow-600 cursor-pointer w-[80vw] mx-auto py-4 text-center rounded-md mt-6 " style={{margin: "auto",marginTop: "54px", padding: "20px 0"}}> <span className="absolute left-[-40px] text-3xl "> 👉🏻</span> <span className="">🏫 Guidelines for New Applicants</span>  </motion.div>
       <section className="section" id="overview">
         <h2>Mission & Vision</h2>
         <p>
