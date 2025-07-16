@@ -12,6 +12,8 @@ import Resources from "./assets/components/resources.jsx";
 import ScrollToTopButton from "./assets/components/scroll.jsx";
 import NewApplicants from "./assets/components/NewApplicants.jsx";
 import { useEffect } from "react";
+import Error from "./assets/components/error.jsx";
+
 
 
 
@@ -79,17 +81,16 @@ const App = () => {
         </>
       ),
     },
-    // {
-    //   path: "*",
-    //   element: (
-    //     <>
-    //       <Navbar />
-    <ScrollToTopButton />
-    //       <ErrorPage />
-    //       <Footer />
-    //     </>
-    //   ),
-    // },
+    {
+      path: "*",
+      element: (
+        <>
+          <Navbar />
+          <Error />
+          <Footer />
+        </>
+      ),
+    },
   ]);
   return (
     <>

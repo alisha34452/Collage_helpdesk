@@ -134,7 +134,7 @@ const Landing = () => {
             <i className="fas fa-file-alt"></i> Syllabus & Curriculum
           </div>
         </ul>
-        <a href="/src/pages/resources.html" className="btn">
+        <a href="/resources" className="btn">
           visit the page
         </a>
       </section>
