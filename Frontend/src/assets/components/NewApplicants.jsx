@@ -35,7 +35,7 @@ const files = [
   { name: "GAP.pdf", label: "Gap Formate" },
   { name: "Anti_Ragging_Affidavit_Format.pdf", label: "Anti Ragging Format" },
   { name: "Medical-Format-GECK.pdf", label: "Medical Format" },
-  { name: "uniform 25-2029.pdf", label: "Dress Code 25-2029" },
+  { name: "uniform%2024-2028.pdf", label: "Dress Code 25-2029" },
   {
     name: "BTech(Group_A)1st_2nd_Sem.pdf",
     label: "B.Tech (Group_A) Syllabus",

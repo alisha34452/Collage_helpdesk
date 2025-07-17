@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../css/departments.css'
+import "../css/departments.css";
 
 const Department = () => {
   return (
@@ -16,48 +16,48 @@ const Department = () => {
           college.
         </p>
         <div className="department-list">
-          <div className="department-item" data-dept-id="dept-cse">
+          <a href="#dept-cse" className="department-item" data-dept-id="dept-cse">
             <h2>Computer Science</h2>
             <p>
               Explore our Computer Science department, offering cutting-edge
               courses and research opportunities.
             </p>
-          </div>
-          <div className="department-item" data-dept-id="dept-mech">
+          </a>
+          <a href="#dept-mech" className="department-item" data-dept-id="dept-mech">
             <h2>Mechanical Engineering</h2>
             <p>
               Discover our Mechanical Engineering department, where innovation
               meets design.
             </p>
-          </div>
-          <div className="department-item" data-dept-id="dept-civil">
+          </a>
+          <a href="#dept-civil" className="department-item" data-dept-id="dept-civil">
             <h2>Civil Engineering</h2>
             <p>
               Learn about our Civil Engineering department, focusing on
               sustainable infrastructure.
             </p>
-          </div>
-          <div className="department-item" data-dept-id="dept-eee">
+          </a>
+          <a href="#dept-eee" className="department-item" data-dept-id="dept-eee">
             <h2>Electrical Engineering</h2>
             <p>
               Dive into our Electrical Engineering department, specializing in
               power systems and electronics.
             </p>
-          </div>
-          <div className="department-item" data-dept-id="dept-aiml">
+          </a>
+          <a href="#dept-aiml" className="department-item" data-dept-id="dept-aiml">
             <h2>AI & ML Engineering</h2>
             <p>
               Explore our AI & ML Engineering department, at the forefront of
               technology and innovation.
             </p>
-          </div>
-          <div className="department-item" data-dept-id="dept-ece">
+          </a>
+          <a href="#dept-ece" className="department-item" data-dept-id="dept-ece">
             <h2>Electronics and Communication Engineering</h2>
             <p>
               Learn about our Electronics and Communication Engineering
               department, bridging the gap between technology and business.
             </p>
-          </div>
+          </a>
         </div>
       </section>
 

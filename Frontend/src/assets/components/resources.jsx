@@ -15,71 +15,71 @@ const Resources = () => {
             <h2><i className="fas fa-toolbox"></i> Student Resources</h2>
             <div className="resource-grid">
 
-                <div className="resource-card" data-detail-id="notice">
+                <a href='#notice' className="resource-card" data-detail-id="notice">
                     <i className="fas fa-bullhorn"></i>
                     <h3>Notice Board</h3>
                     <p>Stay updated with latest announcements and college news.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="counseling">
+                <a href='#counseling' className="resource-card" data-detail-id="counseling">
                     <i className="fas fa-user-friends"></i>
                     <h3>Counseling Services</h3>
                     <p>Academic, personal, and mental health support.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="library">
+                <a href="#library" className="resource-card" data-detail-id="library">
                     <i className="fas fa-book-reader"></i>
                     <h3>Library Services</h3>
                     <p>Access books, journals, digital resources, and study zones.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="career">
+                <a href="#career" className="resource-card" data-detail-id="career">
                     <i className="fas fa-briefcase"></i>
                     <h3>Career Services</h3>
                     <p>Placements, internships, resume help, and training.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="sports">
+                <a href="#sports" className="resource-card" data-detail-id="sports">
                     <i className="fas fa-futbol"></i>
                     <h3>Sports Facilities</h3>
                     <p>Indoor, outdoor games, gym, and yoga sessions.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="health">
+                <a href="#health" className="resource-card" data-detail-id="health">
                     <i className="fas fa-clinic-medical"></i>
                     <h3>Health Services</h3>
                     <p>Medical rooms, first-aid, and hospital tie-ups.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="calendar">
+                <a href="#calendar" className="resource-card" data-detail-id="calendar">
                     <i className="fas fa-calendar-alt"></i>
                     <h3>Academic Calendar</h3>
                     <p>Semester dates, holidays, and academic schedules.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="timetable">
+                <a href="#timetable" className="resource-card" data-detail-id="timetable">
                     <i className="fas fa-clock"></i>
                     <h3>Timetable</h3>
                     <p>Daily schedules for classes, labs, and electives.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="exam">
+                <a href="#" className="resource-card" data-detail-id="exam">
                     <i className="fas fa-pen-fancy"></i>
                     <h3>Exam Schedule</h3>
                     <p>Internal, midterm, and final exam date sheets.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="syllabus">
+                <a href="#exam" className="resource-card" data-detail-id="syllabus">
                     <i className="fas fa-book"></i>
                     <h3>Syllabus & Curriculum</h3>
                     <p>AICTE-approved programs and semester-wise syllabus.</p>
-                </div>
+                </a>
 
-                <div className="resource-card" data-detail-id="alumni">
+                <a href="#syllabus" className="resource-card" data-detail-id="alumni">
                     <i className="fas fa-users"></i>
                     <h3>Alumni Network</h3>
                     <p>Connect with successful alumni and mentors.</p>
-                </div>
+                </a>
 
             </div>
         </section>
