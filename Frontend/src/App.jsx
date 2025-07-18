@@ -13,6 +13,10 @@ import ScrollToTopButton from "./assets/components/scroll.jsx";
 import NewApplicants from "./assets/components/NewApplicants.jsx";
 import { useEffect } from "react";
 import Error from "./assets/components/error.jsx";
+import Devloper from "./assets/components/devloper.jsx";
+import Gallery from "./assets/components/gallery.jsx";
+
+
 
 
 
@@ -77,6 +81,28 @@ const App = () => {
           <Navbar />
           <ScrollToTopButton />
           <Resources />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/developer",
+      element: (
+        <>
+          <Navbar />
+          <ScrollToTopButton />
+          <Devloper />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/gallery",
+      element: (
+        <>
+          <Navbar />
+          <ScrollToTopButton />
+          <Gallery />
           <Footer />
         </>
       ),
