@@ -212,6 +212,8 @@ footer {
   cursor: pointer;
 }
 
+
+
 .animated-link {
   animation: colorPulse 3s infinite;
   font-weight: bold;

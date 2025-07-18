@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+
+
+
 
 import "../css/departments.css";
 
 const Department = () => {
+   const location = useLocation();
+   useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <section className="department" id="dep">

@@ -1,11 +1,13 @@
 import React from "react";
 import "../../App.css";
 import { motion } from "framer-motion";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 
 const Landing = () => {
   const navigate = useNavigate();
+ 
   return (
     <div>
       {/*  Hero Section  */}
@@ -16,7 +18,7 @@ const Landing = () => {
         </div>
       </section>
       <motion.div
-      initial={{  scale: 0.9 }}
+        initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
         transition={{
           duration: 1,
@@ -25,8 +27,12 @@ const Landing = () => {
           repeatType: "reverse",
         }}
         onClick={() => navigate("/NewApplicants")}
-        
-         class="bg-yellow-600 cursor-pointer w-[80vw] mx-auto py-4 text-center rounded-md mt-6 " style={{margin: "auto",marginTop: "54px", padding: "20px 0"}}> <span className="absolute left-[-40px] text-3xl "> 👉🏻</span> <span className="">🏫 Guidelines for New Applicants</span>  </motion.div>
+        className="bg-yellow-600 cursor-pointer w-[80vw] mx-auto py-4 text-center rounded-md mt-6 "
+        style={{ margin: "auto", marginTop: "54px", padding: "20px 0" }}
+      >
+        <span className="absolute left-[-40px] text-3xl "> 👉🏻</span>{" "}
+        <span className="">🏫 Guidelines for New Applicants</span>{" "}
+      </motion.div>
       <section className="section" id="overview">
         <h2>Mission & Vision</h2>
         <p>
@@ -58,28 +64,40 @@ const Landing = () => {
         <h2>Departments</h2>
         <ul className="highlights">
           <div>
+            <Link to={"/departments#dept-civil"} className="">
             <i className="fas fa-building"></i> Civil Engineering
+          </Link>
           </div>
           <div>
+            <Link to={"/departments#dept-mech"} className="">
             <i className="fas fa-cogs"></i> Mechanical Engineering
+          </Link>
           </div>
-          <div>
+         <div>
+           <Link to={"/departments#dept-eee"} className="">
             <i className="fas fa-bolt"></i> Electrical Engineering
-          </div>
+          </Link>
+         </div>
           <div>
+            <Link to={"/departments#dept-aiml"} className="">
             <i className="fas fa-robot"></i> AI & ML Engineering
+          </Link>
           </div>
-          <div>
+         <div>
+           <Link to={"/departments#dept-cse"} className="">
             <i className="fas fa-laptop-code"></i> Computer Science &
             Engineering
-          </div>
-          <div>
+          </Link>
+         </div>
+         <div>
+           <Link to={"/departments#dept-ece"} className="">
             <i className="fas fa-signal"></i> Electronic and Communication
             Engineering
-          </div>
+          </Link>
+         </div>
         </ul>
         <a href="/departments" className="btn">
-          visit the page
+          Visit the page &gt;&gt;&gt;
         </a>
       </section>
 
@@ -98,7 +116,7 @@ const Landing = () => {
         <h3>Scholarships & Deadlines</h3>
         <p>Merit-based and need-based scholarships available.</p>
         <a href="/admissions" className="btn">
-          visit the page
+          Visit the page &gt;&gt;&gt;
         </a>
       </section>
 
@@ -135,7 +153,7 @@ const Landing = () => {
           </div>
         </ul>
         <a href="/resources" className="btn">
-          visit the page
+          Visit the page &gt;&gt;&gt;
         </a>
       </section>
 
