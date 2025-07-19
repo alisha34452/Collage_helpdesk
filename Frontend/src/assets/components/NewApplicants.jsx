@@ -143,7 +143,7 @@ const NewApplicants = () => {
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          className="w-[80vw] rounded-3xl "
+          className="w-full rounded-3xl "
         ></iframe>
       </section>
     </div>
