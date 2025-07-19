@@ -35,7 +35,10 @@ const files = [
   { name: "GAP.pdf", label: "Gap Formate" },
   { name: "Anti_Ragging_Affidavit_Format.pdf", label: "Anti Ragging Format" },
   { name: "Medical-Format-GECK.pdf", label: "Medical Format" },
-  { name: "uniform%2024-2028.pdf", label: "Dress Code 25-2029" },
+  {
+    name: "https://drive.google.com/file/d/1qA87bBvMI056mBBcTx5Nkf_ok2sn1hwG/view?usp=drive_link",
+    label: "Dress Code 25-2029",
+  },
   {
     name: "BTech(Group_A)1st_2nd_Sem.pdf",
     label: "B.Tech (Group_A) Syllabus",
@@ -56,7 +59,9 @@ const NewApplicants = () => {
             <div
               onClick={() =>
                 window.open(
-                  `https://akshay0712-dev.github.io/campusDocs/docs/${file.name}`,
+                  file.label === "Dress Code 25-2029"
+                    ? "https://drive.google.com/file/d/1qA87bBvMI056mBBcTx5Nkf_ok2sn1hwG/view?usp=drive_link"
+                    : `https://akshay0712-dev.github.io/campusDocs/docs/${file.name}`,
                   "_blank"
                 )
               }
@@ -75,13 +80,13 @@ const NewApplicants = () => {
           Join the official WhatsApp group(s) to stay updated with important
           announcements, document requirements, and orientation-related info.
         </p>
-        <div className="whatsapp-grid flex justify-between" style={{}} >
+        <div className="whatsapp-grid flex justify-between" style={{}}>
           {whatsapp_group.map((group, index) => (
             <div
               key={index}
               onClick={() => window.open(group.link, "_blank")}
               className="whatsapp-card cursor-pointer transition-all hover:scale-105  w-fit hover:bg-green-100 border border-green-300 rounded-lg shadow-md mb-3"
-              style={{padding:"30px"}}
+              style={{ padding: "30px" }}
             >
               <div className="flex items-center gap-8 ">
                 <i className="fa-brands fa-whatsapp text-green-600 text-xl"></i>
