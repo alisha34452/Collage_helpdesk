@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Optional if using React Router
 
+import { Analytics } from "@vercel/analytics";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,6 +32,8 @@ const Navbar = () => {
           <span></span>
         </div>
       </nav>
+      
+          <Analytics />
     </header>
   );
 };
