@@ -17,9 +17,9 @@ const devloperData = [
     img: "Prem.png",
     reg: "",
     insta: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/akshay-kumar-93b487215/",
     Email: "",
-    GitHub: "",
+    GitHub: "https://github.com/akshay0712-dev",
   },
 ];
 

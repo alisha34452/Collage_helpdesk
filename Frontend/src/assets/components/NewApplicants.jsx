@@ -32,7 +32,7 @@ const whatsapp_group = [
 ];
 
 const files = [
-  { name: "GAP.pdf", label: "Gap Formate" },
+  { name: "GAP.pdf", label: "Gap Year Format" },
   { name: "Anti_Ragging_Affidavit_Format.pdf", label: "Anti Ragging Format" },
   { name: "Medical-Format-GECK.pdf", label: "Medical Format" },
   {
