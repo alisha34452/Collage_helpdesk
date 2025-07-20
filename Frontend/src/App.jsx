@@ -2,9 +2,6 @@ import React from "react";
 import Navbar from "./assets/components/navbar";
 import Footer from "./assets/components/footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Landing from "./assets/components/landing";
 import Admission from "./assets/components/admission.jsx";
 import Department from "./assets/components/department.jsx";
@@ -17,9 +14,14 @@ import Devloper from "./assets/components/devloper.jsx";
 import Gallery from "./assets/components/gallery.jsx";
 
 
-
-
-
+const Layout = ({ children }) => (
+  <>
+    <Navbar />
+    <ScrollToTopButton />
+    {children}
+    <Footer />
+  </>
+);
 
 const App = () => {
   useEffect(() => {
@@ -33,88 +35,65 @@ const App = () => {
     {
       path: "/",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Landing />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/NewApplicants",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <NewApplicants />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/admissions",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Admission />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/departments",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Department />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/resources",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Resources />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/developer",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Devloper />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "/gallery",
       element: (
-        <>
-          <Navbar />
-          <ScrollToTopButton />
+        <Layout>
           <Gallery />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
     {
       path: "*",
       element: (
-        <>
-          <Navbar />
+        <Layout>
           <Error />
-          <Footer />
-        </>
+        </Layout>
       ),
     },
   ]);
