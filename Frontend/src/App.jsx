@@ -12,6 +12,8 @@ import { useEffect } from "react";
 import Error from "./assets/components/error.jsx";
 import Devloper from "./assets/components/devloper.jsx";
 import Gallery from "./assets/components/gallery.jsx";
+import Dress from "./assets/components/dress.jsx";
+
 
 
 const Layout = ({ children }) => (
@@ -85,6 +87,14 @@ const App = () => {
       element: (
         <Layout>
           <Gallery />
+        </Layout>
+      ),
+    },
+    {
+      path: "/dress",
+      element: (
+        <Layout>
+          <Dress />
         </Layout>
       ),
     },

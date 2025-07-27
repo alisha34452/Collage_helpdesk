@@ -36,7 +36,8 @@ const files = [
   { name: "Anti_Ragging_Affidavit_Format.pdf", label: "Anti Ragging Format" },
   { name: "Medical-Format-GECK.pdf", label: "Medical Format" },
   {
-    name: "https://drive.google.com/file/d/1qA87bBvMI056mBBcTx5Nkf_ok2sn1hwG/view?usp=drive_link",
+    // 
+    name: "https://drive.google.com/file/d/1U0fn6JZ37bDgmQBRicPJJpowuVrxGSHQ/view?usp=drive_link",
     label: "Dress Code 25-2029",
   },
   {
@@ -60,7 +61,7 @@ const NewApplicants = () => {
               onClick={() =>
                 window.open(
                   file.label === "Dress Code 25-2029"
-                    ? "https://drive.google.com/file/d/1qA87bBvMI056mBBcTx5Nkf_ok2sn1hwG/view?usp=drive_link"
+                    ? "/dress"
                     : `https://akshay0712-dev.github.io/campusDocs/docs/${file.name}`,
                   "_blank"
                 )
